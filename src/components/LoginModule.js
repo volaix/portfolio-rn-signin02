@@ -15,7 +15,6 @@ const LoginModuleViewStyle = styled.View`
   justify-content: center;
 `
 
-
 class LoginModule extends React.Component {
   onPressGetData = () => {
     console.log('you have press onpressgetdata')

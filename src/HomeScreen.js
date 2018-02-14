@@ -41,7 +41,6 @@ class HomeScreen extends React.Component {
 
         <LoginModule />
 
-
         <Text style={{ marginTop: 20, color: OFFWHITE_COLOR }}>Need Help ?</Text>
 
       </ImageBackground>
