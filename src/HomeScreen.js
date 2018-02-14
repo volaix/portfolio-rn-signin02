@@ -5,6 +5,14 @@ import styled from 'styled-components'
 import RoundedInput from './RoundedInput';
 import { OFFWHITE_COLOR, SUBTITLE_COLOR } from './constants';
 
+const HeaderText = styled.Text`
+  color: ${OFFWHITE_COLOR};
+  font-size: 50; 
+  font-style: italic;
+  font-weight: 200;
+  margin-bottom: 30;
+`
+
 
 const imageBackgroundStyle = {
   flex: 1,
@@ -28,31 +36,32 @@ class HomeScreen extends React.Component {
         source={require('./imgs/diego-ph-222506.jpg')}
         style={imageBackgroundStyle}
       >
-        <Text style={{ color: OFFWHITE_COLOR, fontSize: 50, fontStyle: 'italic', fontWeight: '200', marginBottom: 30 }}>TravelX</Text>
 
-        <View style={{flexDirection: 'row', justifyContent: 'space-around', width: '90%', marginBottom: 20}}>
-        <Text style={{fontSize:20, color: SUBTITLE_COLOR}}>Login</Text>
-        <Text style={{fontSize:20, color: SUBTITLE_COLOR}}>Signup</Text>
+        <HeaderText>TravelX</HeaderText>
+
+        <View style={{ flexDirection: 'row', justifyContent: 'space-around', width: '90%', marginBottom: 20 }}>
+          <Text style={{ fontSize: 20, color: SUBTITLE_COLOR }}>Login</Text>
+          <Text style={{ fontSize: 20, color: SUBTITLE_COLOR }}>Signup</Text>
         </View>
 
-        <View style={{ height: 230, width: '90%', borderRadius: 20, backgroundColor: 'rgba(34,47,58,1)', alignItems: 'center'}}>
+        <View style={{ height: 230, width: '90%', borderRadius: 20, backgroundColor: 'rgba(34,47,58,1)', alignItems: 'center' }}>
 
-            <View style={{alignItems: 'center', marginTop: 30, marginBottom: 20}}>
-            <RoundedInput iconName='mail' placeholder='Username'/>
-            <RoundedInput iconName='lock' placeholder='Password' secureTextEntry/>
-            </View>
-            
-            <Button 
-            title='LOGIN' 
-            borderRadius={10} 
-            containerViewStyle={{borderRadius:10}} 
-            backgroundColor='rgba(147,72,79,1)' 
-            buttonStyle={{width: 170}}
+          <View style={{ alignItems: 'center', marginTop: 30, marginBottom: 20 }}>
+            <RoundedInput iconName='mail' placeholder='Username' />
+            <RoundedInput iconName='lock' placeholder='Password' secureTextEntry />
+          </View>
+
+          <Button
+            title='LOGIN'
+            borderRadius={10}
+            containerViewStyle={{ borderRadius: 10 }}
+            backgroundColor='rgba(147,72,79,1)'
+            buttonStyle={{ width: 170 }}
             color={OFFWHITE_COLOR}
-            />
+          />
         </View>
 
-        <Text style={{marginTop: 20, color: OFFWHITE_COLOR}}>Need Help ?</Text>
+        <Text style={{ marginTop: 20, color: OFFWHITE_COLOR }}>Need Help ?</Text>
 
       </ImageBackground>
     )
