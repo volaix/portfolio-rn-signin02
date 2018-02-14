@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View, Image, ImageBackground, TextInput } from 'react-native'
 import styled from 'styled-components/native';
-import { SUBTITLE_COLOR, OFFWHITE_COLOR, LESSTHANOFFWHITE_COLOR } from './constants';
+import { SUBTITLE_COLOR, OFFWHITE_COLOR, LESSTHANOFFWHITE_COLOR } from '../constants';
 import { Icon } from 'react-native-elements';
 
 const inputStyle = {
