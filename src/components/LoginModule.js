@@ -2,7 +2,7 @@
 import React from 'react'
 import { View, Text, Alert, ImageBackground } from 'react-native'
 import { Button, Avatar, FormLabel, FormInput } from 'react-native-elements'
-import styled from 'styled-components'
+import styled from 'styled-components/native'
 import RoundedInput from './RoundedInput';
 import { OFFWHITE_COLOR, SUBTITLE_COLOR } from '../constants';
 
