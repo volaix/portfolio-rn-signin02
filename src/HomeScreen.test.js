@@ -1,13 +1,14 @@
-import React from 'react';
-import { mount, render, shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
-import toJson from 'enzyme-to-json';
+import React from 'react'
+import styled from 'styled-components'
+import renderer from 'react-test-renderer'
 import 'jest-styled-components'
 import HomeScreen from './HomeScreen';
 
-describe('Button Block', () => {
-  it('renders correctly', () => {
-    const tree = renderer
-      .create(<HomeScreen />)
-  })
+const Button = styled.button`
+  color: red;
+`
+
+test('it works', () => {
+  const tree = renderer.create(<HomeScreen />).toJSON()
+  expect(tree).toMatchSnapshot()
 })
